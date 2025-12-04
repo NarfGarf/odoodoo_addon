@@ -1,5 +1,5 @@
 # Como agregar un modulo nuevo a Odoo
-## Paso 0:
+## Paso 1:
 Tener la estructura correcta (no es necesario tenerlo en github)
 ```
 <custom_module>
@@ -100,5 +100,19 @@ Meter en `security/ir.model.access.csv`
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_my_model_user,access_my_model_user,model_my_model,,1,1,1,1
 ```
-## Paso 1:
-https://www.netilligence.io/blog/how-to-create-a-custom-module-in-odoo-18-a-step-by-step-guide/
+## Paso 2:
+Ir a la carpeta custom_addons de tu Odoo y agregar tu carpeta custom_module adentro
+## Paso 3:
+Prender / Reiniciar tu Odoo
+## Paso 4:
+Ir a Settings y activar modo desarrollador
+
+<img width="670" height="668" alt="image" src="https://github.com/user-attachments/assets/fb130dba-96a8-4936-9807-7305bbf32b0d" />
+
+## Paso 5:
+Ir a Apps y hacer click en "Update Apps List", elegir tu modulo y hacer click en Install
+
+<img width="827" height="420" alt="image" src="https://github.com/user-attachments/assets/61aea083-2c31-46aa-8c68-f1d73efd322e" />
+
+### Warning
+Esto no se puede hacer en la version gratuita de Render
